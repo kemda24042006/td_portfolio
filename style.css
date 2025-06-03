@@ -1,0 +1,117 @@
+/*style.css*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:60px;
+    padding: 10px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container{
+    width: 100%;
+    padding: 2%;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: cadetblue;
+    color: #fff;
+    padding: 50px 9;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 50px;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a ,nav ul li button{
+    background-color: cadetblue;
+    color: black;
+    text-decoration: dashed;
+    display: block;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+nav ul li:hover{
+    background-color: cadetblue;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    flex-direction: column;
+    min-width: 160px;
+
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul  li a {
+    padding: 12px 16px;
+}
+nav ul li ul li a:hover{
+    background-color: cadetblue;
+}
+main{
+    padding: 20px;
+}
+section{
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+}
+h2{
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 2px;
+}
+article img{
+    max-width: 30%;
+    height: auto;
+    border-radius: 30px;
+}
+ul{
+    list-style: square inside;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin-top: 0px;
+}
+form input,form textarea{
+    padding: 0px;
+    margin-top: 0px;
+    border: 1px solid  ;
+    border-radius: 0px;
+}
+form button{
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+
+}
+form button:hover{
+    background-color: #555;
+}
+footer{
+    text-align: center;
+    padding: 0px;
+    background-color: #222;
+    color: #fff;
+}
